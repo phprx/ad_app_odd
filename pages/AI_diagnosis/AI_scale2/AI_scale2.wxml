@@ -1,0 +1,123 @@
+<!--pages/AI_diagnosis/AI_scale2/AI_scale2.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <button class="System {{ showFirsttime ? 'show' : ''}}" bindtap="show" data-index="1">首次测试结果
+  </button>
+  <view class="firstTime {{ showFirsttime ? ' ' : 'hide'}}">
+    <view class="section">
+      <view class="topic">日期</view>
+      <picker name="first_Timechooser" mode="date" value="{{date1}}" start="1990-09-01" end="2020-01-01" bindchange="bindDateChange1">
+          <view class="picker">
+            {{date1}}
+          </view>
+      </picker>
+    </view>
+    <view class='line'></view>
+    <view class="top">
+      <view class="topic">生物标志物</view>
+      <view class="content">
+        <view class="item">
+          <text>Abeta</text>
+          <input name="first_Abeta" value="319"></input>
+        </view>
+        <view class="item">
+          <text>PTAU</text>
+          <input name="first_PTAU" value="5.36"></input>
+        </view>
+        <view class="item">
+          <text>TAU</text>
+          <input name="first_TAU" value="6.17"></input>
+        </view>
+        <view class="item">
+          <text>ICV</text>
+          <input name="first_ICV" value="2321319"></input>
+        </view>
+        <view class="item">
+          <text>Hippocampus</text>
+          <input name="first_Hippocampus" value="11845.9"></input>
+        </view>
+        <view class="item">
+          <text>Whole Brain</text>
+          <input name="first_Whole Brain" value="1634644"></input>
+        </view>
+      </view>
+    </view>
+    <view class='line'></view>
+    <view class="bottom">
+      <view class="topic">神经心理学评估</view>
+      <view class="content">
+        <view class="item">
+          <text>ADAS13</text>
+          <input name="first_ADAS13" value="59.67"></input>
+        </view>
+        <view class="item">
+          <text>MMSE</text>
+          <input name="first_MMSE" value="28"></input>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="System {{ showSecondtime ? 'show' : ''}}" bindtap="show" data-index="2">第二次测试结果
+  </button>
+  <view class="secondTime {{ showSecondtime ? ' ' : 'hide'}}">
+  <view class="section">
+      <view class="topic">日期</view>
+      <picker name="second_Timechooser" mode="date" value="{{date2}}" start="1990-09-01" end="2020-01-01" bindchange="bindDateChange2">
+          <view class="picker"> 
+            {{date2}}
+          </view>
+      </picker>
+    </view>
+    <view class='line'></view>
+    <view class="top">
+      <view class="topic">生物标志物</view>
+      <view class="content">
+        <view class="item">
+          <text>Abeta</text>
+          <input name="second_Abeta" value="319"></input>
+        </view>
+        <view class="item">
+          <text>PTAU</text>
+          <input name="second_PTAU" value="5.36"></input>
+        </view>
+        <view class="item">
+          <text>TAU</text>
+          <input name="second_TAU" value="6.17"></input>
+        </view>
+        <view class="item">
+          <text>ICV</text>
+          <input name="second_ICV" value="2321319"></input>
+        </view>
+        <view class="item">
+          <text>Hippocampus</text>
+          <input name="second_Hippocampus" value="11845.9"></input>
+        </view>
+        <view class="item">
+          <text>Whole Brain</text>
+          <input name="second_Whole Brain" value="1634644"></input>
+        </view>
+      </view>
+    </view>
+    <view class='line'></view>
+    <view class="bottom">
+      <view class="topic">神经心理学评估</view>
+      <view class="content">
+        <view class="item">
+          <text>ADAS13</text>
+          <input name="second_ADAS13" value="59.67"></input>
+        </view>
+        <view class="item">
+          <text>MMSE</text>
+          <input name="second_MMSE" value="28"></input>
+        </view>
+      </view>
+    </view>
+  </view>
+    
+
+
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

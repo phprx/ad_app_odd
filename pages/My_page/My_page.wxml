@@ -1,0 +1,33 @@
+<view class="root">
+  <view class="tabs">
+    <button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" wx:if="{{ !isLogin }}">
+      <text>用户登录</text>
+    </button>
+    <view class="logined" wx:else>
+      <image src="{{ avatarUrl }}" style="border-radius:25px;"></image>
+      <text>{{ userName }}</text>
+      <text class="logintype">{{ isExist ?  isDoctor ? '医生' : isParamedic ? '护理人员' : '病人' : '' }}</text>
+      <text class="changeinfo" bindtap="changeInfoHandle" wx:if="{{ !isExist }}">修改信息</text>
+    </view>
+  </view>
+  <view class="contents">
+    <view wx:if="{{ isDoctor }}">
+      <button bindtap="doctorHandle1">Moca诊断</button>
+      <button bindtap="doctorHandle2">所属病人信息</button>
+      <button bindtap="doctorHandle3">诊断记录</button>
+    </view>
+    <view wx:elif="{{ isParamedic }}">
+      <button bindtap="paramedicHandle1">填写所护理病人的疾病信息</button>
+      <button bindtap="paramedicHandle2">查看所护理病人的病史</button>
+      <button bindtap="paramedicHandle3">诊断记录</button>
+    </view>
+    <view wx:elif="{{ isPatient }}">
+      <button bindtap="patientHandle1">填写疾病信息</button>
+      <button bindtap="patientHandle2">查看病史</button>
+      <button bindtap="patientHandle3">Moca诊断记录</button>
+    </view>
+  </view>
+  <view class="bottom">
+    <button>常见问题</button>
+  </view>
+</view>

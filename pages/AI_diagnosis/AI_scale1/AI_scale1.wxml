@@ -1,0 +1,163 @@
+<!--pages/AI_diagnosis/AI_scale1/AI_scale1.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <button class="System {{ showFirsttime ? 'show' : ''}}" bindtap="show" data-index="1">首次测试结果
+  </button>
+    <view class="firstTime {{ showFirsttime ? ' ' : 'hide'}}">
+      <view class="top">
+        <view class="topic">生物标志物</view>
+        <view class="content">
+          <view class="item">
+            <text>Abeta(40)</text>
+            <input name="first_Abeta(40)" value="6990"></input>
+          </view>
+          <view class="item">
+            <text>Abeta(42)</text>
+            <input name="first_Abeta(42)" value="987"></input>
+          </view>
+          <view class="item">
+            <text>TAU</text>
+            <input name="first_TAU" value="239.7"></input>
+          </view>
+          <view class="item">
+            <text>APOE</text>
+            <input name="first_APOE" value="1"></input>
+          </view>
+        </view>
+      </view>
+      <view class='line'></view>
+      <view class="bottom">
+        <view class="topic">神经心理学评估</view>
+        <view class="content">
+          <view class="item">
+            <text>FDG</text>
+            <input name="first_FDG" value="5.45"></input>
+          </view>
+          <view class="item">
+            <text>MMSE</text>
+            <input name="first_MMSE" value="20"></input>
+          </view>
+          <view class="item">
+            <text>CDRSB</text>
+            <input name="first_CDRSB" value="4.5"></input>
+          </view>
+          <view class="item">
+            <text>RAVLT</text>
+            <input name="first_RAVLT" value="4"></input>
+          </view>
+          <view class="item">
+            <text>FAQ</text>
+            <input name="first_FAQ" value="10"></input>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  <button class="System {{ showSecondtime ? 'show' : ''}}" bindtap="show" data-index="2">第二次测试结果
+  </button>
+    <view class="secondTime {{ showSecondtime ? ' ' : 'hide'}}">
+      <view class="top">
+        <view class="topic">生物标志物</view>
+        <view class="content">
+          <view class="item">
+            <text>Abeta(40)</text>
+            <input name="second_Abeta(40)" value="6990"></input>
+          </view>
+          <view class="item">
+            <text>Abeta(42)</text>
+            <input name="second_Abeta(42)" value="987"></input>
+          </view>
+          <view class="item">
+            <text>TAU</text>
+            <input name="second_TAU" value="239.7"></input>
+          </view>
+          <view class="item">
+            <text>APOE</text>
+            <input name="second_APOE" value="1"></input>
+          </view>
+        </view>
+      </view>
+      <view class='line'></view>
+      <view class="bottom">
+        <view class="topic">神经心理学评估</view>
+        <view class="content">
+          <view class="item">
+            <text>FDG</text>
+            <input name="second_FDG" value="5.45"></input>
+          </view>
+          <view class="item">
+            <text>MMSE</text>
+            <input name="second_MMSE" value="20"></input>
+          </view>
+          <view class="item">
+            <text>CDRSB</text>
+            <input name="second_CDRSB" value="4.5"></input>
+          </view>
+          <view class="item">
+            <text>RAVLT</text>
+            <input name="second_RAVLT" value="4"></input>
+          </view>
+          <view class="item">
+            <text>FAQ</text>
+            <input name="second_FAQ" value="10"></input>
+          </view>
+        </view>
+      </view>
+    </view>
+  <button class="System {{ showThirdtime ? 'show' : ''}}" bindtap="show" data-index="3">第三次测试结果
+  </button>
+    <view class="thirdTime {{ showThirdtime ? ' ' : 'hide'}}">
+      <view class="top">
+        <view class="topic">生物标志物</view>
+        <view class="content">
+          <view class="item">
+            <text>Abeta(40)</text>
+            <input name="third_Abeta(40)" value="6990"></input>
+          </view>
+          <view class="item">
+            <text>Abeta(42)</text>
+            <input name="third_Abeta(42)" value="987"></input>
+          </view>
+          <view class="item">
+            <text>TAU</text>
+            <input name="third_TAU" value="239.7"></input>
+          </view>
+          <view class="item">
+            <text>APOE</text>
+            <input name="third_APOE" value="1"></input>
+          </view>
+        </view>
+      </view>
+      <view class='line'></view>
+      <view class="bottom">
+        <view class="topic">神经心理学评估</view>
+        <view class="content">
+          <view class="item">
+            <text>FDG</text>
+            <input name="third_FDG" value="5.45"></input>
+          </view>
+          <view class="item">
+            <text>MMSE</text>
+            <input name="third_MMSE" value="20"></input>
+          </view>
+          <view class="item">
+            <text>CDRSB</text>
+            <input name="third_CDRSB" value="4.5"></input>
+          </view>
+          <view class="item">
+            <text>RAVLT</text>
+            <input name="third_RAVLT" value="4"></input>
+          </view>
+          <view class="item">
+            <text>FAQ</text>
+            <input name="third_FAQ" value="10"></input>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

@@ -1,0 +1,28 @@
+/* pages/MOCA/Q6/Q6.wxss */
+@import "/utils/basic.wxss";
+.question6-1{
+  display: flex;
+  flex-direction: column;
+}
+
+.operate-area .item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60rpx;
+  font-size: 38rpx;
+}
+.operate-area .item .left{
+  width: 40%;
+}
+.operate-area .item .right{
+  width: 40%;
+}
+.operate-area .item input{
+  height: 1.58823529em;
+  width: 90%;
+  padding-left: 10rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 10rpx;
+}
+

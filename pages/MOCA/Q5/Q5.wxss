@@ -1,0 +1,35 @@
+/* pages/MOCA/Q5/Q5.wxss */
+@import "/utils/basic.wxss";
+.question5-1{
+  display: flex;
+  flex-direction: column;
+}
+.question5-2{
+  display: flex;
+  flex-direction: column;
+}
+.question5-3{
+  display: flex;
+  flex-direction: column;
+}
+
+.question5-1 .operate-area,
+.question5-2 .operate-area{
+  flex: 1;
+  display: flex;
+  margin-top: 100rpx;
+}
+.question5-3 .operate-area{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+}
+.question5-3 .operate-area text{
+  font-size: 88rpx;
+  margin: 0 auto;
+
+}
+.question5-3 .operate-area button{
+  width: 80%;
+  margin-bottom: 48rpx;
+}

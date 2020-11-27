@@ -1,0 +1,32 @@
+/* pages/AI_diagnosis/AI_MRI_report/AI_MRI_report.wxss */
+.form{
+  display: flex;
+}
+.topic{
+  font-weight: bold;
+  font-size: 45rpx;
+  margin: 10rpx;
+}
+.fileUpdate{
+  display: flex;
+  margin: 20rpx;
+}
+.fileUpdate button{
+  width: 35%;
+  margin-right: 10rpx;
+}
+.fileUpdate input{
+  width: 60%;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #ddd;
+}
+
+textarea{
+  margin: 0 auto;
+  width: 95%;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #ddd; 
+  margin-bottom: 30rpx;
+}

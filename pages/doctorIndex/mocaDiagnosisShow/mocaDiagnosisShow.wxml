@@ -1,0 +1,166 @@
+<!--pages/doctorIndex/mocaDiagnosisShow/mocaDiagnosisShow.wxml-->
+<view class="title">病人的Moca测试答案</view>
+<view class="content">
+  <view class="question1-1">
+    <text class="topic">问题1-1</text>
+    <image class="canvas_bgp" src="/assets/moca/8.1/q1-1.png"></image>
+    <image class="canvas" src="/assets/1.png"></image>
+    <view class="score">
+      <text>第1-1分数</text>
+      <input></input>
+    </view> 
+  </view>
+  <view class="question1-2">
+    <text class="topic">问题1-2</text>
+    <image class="canvas" src="/assets/2.png"></image>
+    <view class="score">
+      <text>第1-2分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question1-3">
+    <text class="topic">问题1-3</text>
+    <image class="canvas" src="/assets/3.png"></image>
+    <view class="score">
+      <text>第1-3分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question2-1">
+    <text class="topic">问题2-1</text>
+    <text class="textAnswer">2-1的答案是：狮子</text>
+    <view class="score">
+      <text>第2-1分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question2-2">
+    <text class="topic">问题2-2</text>
+    <text class="textAnswer">2-2的答案是：犀牛</text>
+    <view class="score">
+      <text>第2-2分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question2-3">
+    <text class="topic">问题2-3</text>
+    <text class="textAnswer">2-3的答案是：骆驼</text>
+    <view class="score">
+      <text>第2-3分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question3-1">
+    <text class="topic">问题3-1</text>
+    <audio name="播放" src="3-1" controls></audio>
+    <view class="score">
+      <text>第3-1分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question3-2">
+    <text class="topic">问题3-2</text>
+    <audio name="播放" src="3-2" controls></audio>
+    <button class="showType">提示-种类</button>
+    <view class="checkbox">
+      <checkbox-group>
+        <label wx:for="{{itemType}}">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}" disabled="true">{{item.value}}</checkbox>
+        </label>
+      </checkbox-group>
+    </view>
+    <button class="showMulti">提示-多选一</button>
+    <view class="checkbox">
+      <checkbox-group>
+        <label wx:for="{{itemMulti}}">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}" disabled="true">{{item.value}}</checkbox>
+        </label>
+      </checkbox-group>
+    </view>
+    <view class="score">
+      <text>第3-2分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question4-1">
+    <text class="topic">问题4-1</text>
+    <audio name="播放" src="4-1" controls></audio>
+    <view class="score">
+      <text>第4-1分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question4-2">
+    <text class="topic">问题4-2</text>
+    <audio name="播放" src="4-2" controls></audio>
+    <view class="score">
+      <text>第4-2分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question4-3">
+    <text class="topic">问题4-3</text>
+    <text class="textAnswer">点错了 5 个</text>
+    <view class="score">
+      <text>第4-3分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question4-4">
+    <text class="topic">问题4-4</text>
+    <text class="textAnswer">病人认为的100连续减7的值为: 93,86,79,72,65</text>
+    <view class="score">
+      <text>第4-4分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question5-1">
+    <text class="topic">问题5-1</text>
+    <audio name="播放" src="5-1" controls></audio>
+    <view class="score">
+      <text>第5-1分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question5-2">
+    <text class="topic">问题5-2</text>
+    <audio name="播放" src="5-2" controls></audio>
+    <view class="score">
+      <text>第5-2分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question5-3">
+    <text class="topic">问题5-3</text>
+    <audio name="播放" src="5-3" controls></audio>
+    <view class="score">
+      <text>第5-3分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question6-1">
+    <text class="topic">问题6-1</text>
+    <text class="textAnswer">三组词语的相同之处</text>
+    <text class="textAnswer">1.都是水果</text>
+    <text class="textAnswer">2.都是交通工具</text>
+    <text class="textAnswer">3.都可以度量</text>
+    <view class="score">
+      <text>第6-1分数</text>
+      <input></input>
+    </view>
+  </view>
+  <view class="question7-1">
+    <text class="topic">问题7-1</text>
+    <text class="textAnswer">年份：2020</text>
+    <text class="textAnswer">月份：01</text>
+    <text class="textAnswer">日期：06</text>
+    <text class="textAnswer">星期几：星期一</text>
+    <text class="textAnswer">地点：上海</text>
+    <text class="textAnswer">城市：上海</text>
+    <view class="score">
+      <text>第7-1分数</text>
+      <input></input>
+    </view>
+  </view>
+  <button bindtap="submit">诊断完成</button>
+</view>

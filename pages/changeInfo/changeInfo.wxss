@@ -1,0 +1,74 @@
+/* pages/changeInfo/changeInfo.wxss */
+.picker{
+  padding: 10rpx;
+  margin: 20rpx;
+  width:300rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #ddd;   
+}
+.topic{
+  font-weight: bold;
+  font-size: 52rpx;
+  margin: 0 auto;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  font-size: 32rpx;
+  margin: 40rpx 20rpx 20rpx 20rpx;
+  display: flex;
+}
+.item text{
+  margin-right: 20rpx;
+}
+.item input{
+  border-radius: 10rpx;
+  border: 1rpx solid #ddd;
+  padding: 10rpx;   
+}
+.itemmale{
+  display: flex;
+  margin-left: 20rpx;
+}
+.itemmale text{
+  padding-top: 20rpx;
+}
+.itembirthday{
+  display: flex;
+  margin-left: 20rpx;
+}
+.itembirthday text{
+  padding-top: 30rpx;
+}
+.itembirthday .picker{
+  width:300rpx;
+}
+radio{
+  margin: 20rpx;
+}
+
+.scroll{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  height: 1000rpx; 
+  margin: 5rpx;
+  margin-top: 50rpx;
+  border: 1rpx solid #888;
+}
+.tr{
+  display: flex;
+  align-items: center;
+}
+label{
+  margin-left: 30%;
+}
+.td{
+  flex-shrink: 0;
+  width: 200rpx;
+  height: 100rpx;
+  padding-top: 30rpx;
+}

@@ -1,0 +1,36 @@
+/* pages/doctorIndex/mocaDiagnosis/mocaDiagnosis.wxss */
+
+.table{
+  display: flex;
+  flex-direction: column;
+}
+.topic{
+  flex: 1;
+  height: 70rpx;
+  font-size: 52rpx;
+  margin: 0 auto;
+}
+.scroll{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  height: 1000rpx;
+  margin: 5rpx;
+  margin-top: 50rpx;
+  border: 1rpx solid #888;
+}
+.tr{
+  display: flex;
+  align-items: center;
+}
+label{
+  margin-left: 30%;
+}
+
+.td{
+  flex-shrink: 0;
+  width: 200rpx;
+  height: 100rpx;
+  padding-top: 30rpx;
+}

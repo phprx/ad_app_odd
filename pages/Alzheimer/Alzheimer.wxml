@@ -1,0 +1,34 @@
+<!--pages/Alzheimer/Alzheimer.wxml-->
+<view class="content">
+  <button class="System {{ show_MOCA && isLogin ? 'show' : 'stop'}}" bindtap="show" data-index="1">认知评估系统</button>
+    <view class="MOCA" wx:if="{{ show_MOCA && isLogin }}">
+      <navigator url="../MOCA/Q1-1/Q1-1">
+        <button class="item">
+          <text>蒙特利尔认知评估基础量表（MOCA）</text>
+        </button>
+      </navigator>
+    </view>
+  <button class="System {{ show_AI && isLogin ? 'show' : 'stop'}}" bindtap="show" data-index="2">人工智能诊断系统</button>
+    <view class="AI" wx:if="{{ show_AI && isLogin }}">
+      <navigator url="../AI_diagnosis/AI_MRI_image/AI_MRI_image">
+        <button class="item">
+          <text>基于MRI扫描图像的诊断</text>
+        </button>
+      </navigator>
+      <navigator url="../AI_diagnosis/AI_MRI_report/AI_MRI_report">
+        <button class="item">
+          <text>基于MRI报告的诊断</text>
+        </button>
+      </navigator>
+      <navigator url="../AI_diagnosis/AI_scale1/AI_scale1">
+        <button class="item">
+          <text>基于量表的数据诊断（1）</text>
+        </button>
+      </navigator>
+      <navigator url="../AI_diagnosis/AI_scale2/AI_scale2">
+        <button class="item">
+          <text>基于量表的数据诊断（2）</text>
+        </button>
+      </navigator>
+    </view>
+</view>

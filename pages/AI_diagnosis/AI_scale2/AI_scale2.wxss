@@ -1,0 +1,64 @@
+/* pages/AI_diagnosis/AI_scale2/AI_scale2.wxss */
+.line{
+  margin: 20rpx;
+  height: 2rpx;
+  background-color: #D8D8D8;
+}
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}
+.firstTime{
+  display: block;
+}
+.firstTime.hide{
+  display: none;
+}
+.secondTime{
+  display: block;
+}
+.secondTime.hide{
+  display: none;
+}
+.picker{
+  margin: 20rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #ddd;   
+}
+.topic{
+  font-weight: bold;
+  font-size: 38rpx;
+  margin: 10rpx;
+}
+.section .topic{
+  margin-top: 20rpx;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+}
+.top .content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+.top .content .item{
+  margin: 10rpx;
+  width: 45%;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+}
+.bottom .content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+.bottom .content .item{
+  margin: 10rpx;
+  width: 45%;
+}
+input{
+  border: 1rpx solid #ddd;   
+}

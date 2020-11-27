@@ -1,0 +1,22 @@
+<!--pages/doctorIndex/myPatient/myPatient.wxml-->
+<view class="table">
+  <view class="topic">所属病人信息</view>
+  
+  <scroll-view scroll-x="true" scroll-y="true" class="scroll">
+      <view class="tr">
+        <view class="td">{{title.name}}</view>
+        <view class="td">{{title.gender}}</view>
+        <view class="td">{{title.age}}</view>
+        <view class="td">{{title.dieaseHistory}}</view>  
+      </view>
+      <view class="tr" wx:for="{{listData}}" wx:key="{[code]}">
+        <view class="td">{{item.name}}</view>
+        <view class="td">{{item.gender}}</view>
+        <view class="td">{{item.age}}</view>
+        <view class="td">
+          <button class="show" size="mini" data-index="{{item.id}}" bindtap="showPatientDieaseHistory">查看</button>
+        </view>
+      </view>
+    <label>右滑继续查看</label>
+  </scroll-view>
+</view>

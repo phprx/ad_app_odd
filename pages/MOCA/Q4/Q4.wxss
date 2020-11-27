@@ -1,0 +1,52 @@
+/* pages/MOCA/Q4/Q4.wxss */
+@import "/utils/basic.wxss";
+.question4-1{
+  display: flex;
+  flex-direction: column;
+}
+.question4-2{
+  display: flex;
+  flex-direction: column;
+}
+.question4-3{
+  display: flex;
+  flex-direction: column;
+}
+.question4-3 .tap{
+  width: 80%;
+  height: 500rpx;
+}
+.question4-4{
+  display: flex;
+  flex-direction: column;
+}
+
+image{
+  border: 2rpx solid #ddd;
+  box-shadow:  1rpx 1rpx 1rpx 1rpx;
+  width: 500rpx;
+  margin: 0 auto;
+}
+.operate-area{
+  flex: 1;
+  display: flex;
+  margin-top: 100rpx;
+}
+.question4-4 .operate-area{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.question4-4 .operate-area  .item{
+  display: flex;
+  font-size: 32rpx;
+  margin: 20rpx;
+}
+.question4-4 .operate-area input{
+  width: 50%;
+  height: 1.58823529em;
+  padding-left: 10rpx;
+  margin-left: 20rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 10rpx;
+}

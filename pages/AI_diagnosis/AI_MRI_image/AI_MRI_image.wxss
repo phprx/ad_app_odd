@@ -1,0 +1,83 @@
+/* pages/AI_diagnosis/AI_MRI_image/AI_MRI_image.wxss */
+form{
+  display: flex;
+  flex-direction: column;
+}
+.line{
+
+  margin: 20rpx;
+  height: 2rpx;
+  background-color: #D8D8D8;
+}
+.top{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.top .topic{
+  font-weight: bold;
+  font-size: 45rpx;
+  margin: 10rpx;
+}
+.top .content{
+  flex:1;
+  margin: 10rpx;
+}
+.top .content .top_item{
+  display: flex;
+  height: 50rpx;
+  margin: 10rpx;
+}
+.top .content .top_item text{
+  flex: 1;
+}
+.top .content .top_item button{
+  flex: 1;
+}
+.top .content .top_item input{
+  width: 400rpx;
+  height: 50rpx;
+  border: 1rpx solid #ddd; 
+}
+.middle{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.middle .topic{
+  font-weight: bold;
+  font-size: 45rpx;
+  margin: 10rpx;
+}
+.middle .content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.middle .content .mid_item{
+  margin: 10rpx;
+  width: 30.33%;
+}
+.middle .content .mid_item input{
+  border: 1rpx solid #ddd;   
+}
+.bottom{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.bottom .topic{
+  font-weight: bold;
+  font-size: 45rpx;
+  margin: 10rpx;
+}
+.bottom .content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.bottom .content .bot_item{
+  margin: 10rpx;
+  width: 33.33%;
+}
+.bottom .content .bot_item input{
+  border: 1rpx solid #ddd;   
+}

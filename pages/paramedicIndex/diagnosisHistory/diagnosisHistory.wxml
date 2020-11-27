@@ -1,0 +1,21 @@
+<!--pages/patientIndex/diagnosisHistory/diagnosisHistory.wxml-->
+<view class="table">
+  <view class="topic">Moca诊断记录</view>
+  <scroll-view scroll-x="true" scroll-y="true" class="scroll">
+      <view class="tr bg-g">
+        <view class="td">{{title.mocaTestId}}</view>
+        <view class="td">{{title.date}}</view>
+        <view class="td">{{title.doctorName}}</view>
+        <view class="td">{{title.status}}</view>
+        <view class="td">{{title.result}}</view>
+      </view>
+      <view class="tr" wx:for="{{listData}}" wx:key="{[code]}">
+        <view class="td">{{item.code}}</view>
+        <view class="td">{{item.text}}</view>
+        <view class="td">{{item.type1}}</view>
+        <view class="td">{{item.type2}}</view>
+        <view class="td">{{item.type3}}</view>
+      </view>
+    <label>右滑继续查看</label>
+  </scroll-view>
+</view>

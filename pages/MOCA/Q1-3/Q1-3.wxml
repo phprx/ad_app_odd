@@ -1,0 +1,14 @@
+<!--pages/MOCA/Q1-3/Q1-3.wxml-->
+<view class="question1-3">
+  <text class="topic">问题1-3</text>
+  <text class="guide" bindtap="help">点此查看指导</text>
+  <canvas class="canvas" id="canvas" canvas-id="canvas" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback"></canvas>
+
+  <view class="operate-area">
+    <button bindtap="cleardraw">清空</button>
+  </view>
+  <view class="btn-area">
+    <button bindtap="back">上一题</button>
+    <button bindtap="next">下一题</button>
+  </view>
+</view>

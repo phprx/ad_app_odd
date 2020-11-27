@@ -1,0 +1,17 @@
+<!--pages/patientIndex/myDieaseHistory/myDieaseHistory.wxml-->
+<view class="table">
+  <view class="topic">病史</view>
+  <scroll-view scroll-x="true" scroll-y="true" class="scroll">
+    <view class="tr">
+      <view class="td">日期</view>
+      <view class="td">迹象与症状</view>
+      <view class="td">其它症状</view>
+    </view>
+    <view class="tr" wx:for="{{listData}}">
+      <view class="td">{{item.time}}</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type1}}</view>
+    </view>
+    <label>右滑继续查看</label>
+  </scroll-view>
+</view>

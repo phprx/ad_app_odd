@@ -1,0 +1,62 @@
+/* pages/AI_diagnosis/AI_scale1/AI_scale1.wxss */
+
+.firstTime{
+  display: block;
+}
+.firstTime.hide{
+  display: none;
+}
+.secondTime{
+  display: block;
+}
+.secondTime.hide{
+  display: none;
+}
+.thirdTime{
+  display: block;
+}
+.thirdTime.hide{
+  display: none;
+}
+.line{
+
+  margin: 20rpx;
+  height: 2rpx;
+  background-color: #D8D8D8;
+}
+.topic{
+  font-weight: bold;
+  font-size: 38rpx;
+  margin: 10rpx;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+}
+.top.topic{
+  margin-top: 20rpx;
+}
+.top .content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.top .content .item{
+  margin: 10rpx;
+  width: 45%;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+}
+.bottom .content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+.bottom .content .item{
+  margin: 10rpx;
+  width: 45%;
+}
+input{
+  border: 1rpx solid #ddd;   
+}

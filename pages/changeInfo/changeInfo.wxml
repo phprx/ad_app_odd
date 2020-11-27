@@ -1,0 +1,57 @@
+<!--pages/changeInfo/changeInfo.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="content">
+    <view class="topic">请填写您的登录信息</view>
+    <view class="operate">
+      <view class="item">
+        <text>姓名</text>
+        <input name="name" value="" ></input>
+      </view>
+      <view class="itemmale">
+        <text>性别</text>
+        <radio-group name="gender" class="radio-group">
+        <radio class="radio" wx:for-items="{{gender}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+          <text>{{item.value}}</text>
+        </radio>
+      </radio-group>
+      </view>
+      <view class="item">
+        <text>年龄</text>
+        <input name="age" value="" ></input>
+      </view>
+      <view class="itembirthday">
+        <text>生日</text>
+        <picker name="timeChooser" mode="date" value="{{date}}" start="1900-09-01" end="2020-01-01" bindchange="bindDateChange">
+            <view class="picker">
+              {{date}}
+            </view>
+        </picker>
+      </view>
+      <radio-group name="role" class="radio-group" bindchange="radioChange">
+        <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.value}}" checked="{{item.checked}}">
+          <text>{{item.name}}</text>
+        </radio>
+      </radio-group>
+      <view>
+      <scroll-view scroll-x="true" scroll-y="true" class="scroll" wx:if="{{showParamedic}}">
+          <label>请绑定所要护理的病人</label>
+          <view class="tr">
+            <view class="td">姓名</view>
+            <view class="td">生日</view>
+            <view class="td">操作</view>
+          </view>
+          <view class="tr" wx:for="{{listData}}">
+            <view class="td">{{item.name}}</view>
+            <view class="td">{{item.birthday}}</view>
+            <view class="td"><button bindtap="bindPatient" data-index="{{item.id}}" size="mini">绑定</button></view>
+          </view>
+      </scroll-view>
+      </view>
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit">Submit</button>
+      <button formType="reset">Reset</button>
+    </view>
+  </view>
+</form>

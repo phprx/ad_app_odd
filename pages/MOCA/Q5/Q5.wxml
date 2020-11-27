@@ -1,0 +1,40 @@
+<!--pages/MOCA/Q5/Q5.wxml-->
+<view class="question5-1" wx:if="{{ show5_1 }}">
+  <text class="topic">问题5-1</text>
+  <text class="guide" bindtap="help5_1">点此查看指导</text>
+  <audio name="播放" src="/assets/moca/8.1/tts_1.mp3" controls></audio>
+  <view class="operate-area">
+    <button bindtap="startRecord" loading="{{ isBegin }}">开始录音</button>
+    <button bindtap="stopRecord">停止录音</button>
+  </view>
+  <view class="btn-area">
+    <button bindtap="back5_1">上一题</button>
+    <button bindtap="next5_1">下一题</button>
+  </view>
+</view>
+<view class="question5-2" wx:if="{{ show5_2 }}">
+  <text class="topic">问题5-2</text>
+  <text class="guide" bindtap="help5_2">点此查看指导</text>
+  <audio name="播放" src="/assets/moca/8.1/tts_2.mp3" controls></audio>
+  <view class="operate-area">
+    <button bindtap="startRecord" loading="{{ isBegin }}">开始录音</button>
+    <button bindtap="stopRecord">停止录音</button>
+  </view>
+  <view class="btn-area">
+    <button bindtap="back5_2">上一题</button>
+    <button bindtap="next5_2">下一题</button>
+  </view>
+</view>
+<view class="question5-3" wx:if="{{ show5_3 }}">
+  <text class="topic">问题5-3</text>
+  <text class="guide" bindtap="help5_3">点此查看指导</text>
+  <view class="operate-area">
+    <button bindtap="startTimeRecord" loading="{{ isBegin }}">开始录音</button>
+    <text>{{ restTime }}</text>
+  </view>
+  <view class="btn-area">
+    <button bindtap="back5_3">上一题</button>
+    <button bindtap="stopEarly">停止录音</button>
+    <button bindtap="next5_3">下一题</button>
+  </view>
+</view>

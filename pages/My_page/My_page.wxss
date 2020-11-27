@@ -1,0 +1,40 @@
+/** wxss **/
+
+/** 修改button默认的点击态样式类**/
+.root{
+  display: flex;
+  flex-direction: column;
+}
+.tabs{
+  flex: 1;
+}
+.tabs .logined{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  margin: 10px;
+  border: 1rpx solid #e0e0e0;
+}
+.tabs .logined image{
+  height: 100rpx;
+  width: 100rpx;
+}
+.tabs .logined .logintype{
+  flex:1;
+  margin: 30rpx ;
+}
+.tabs .logined .changeinfo{
+  flex:1;
+  margin: 30rpx ;
+  color: #e0e0e0;
+}
+.contents{
+  height: 500rpx;
+}
+.bottom{
+  flex: 1;
+}
+.button-hover {
+  background-color: white;
+}
+button {margin: 10px;}

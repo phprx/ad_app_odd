@@ -1,0 +1,35 @@
+<!--pages/patientIndex/myDiease/myDiease.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="test">
+    <view class="title">记录病情</view>
+    <view class="content">
+      <view class="top">
+        <view class="topic">迹象与症状</view>
+        <checkbox-group name="checkbox">
+          <label class="checkbox" wx:for="{{items}}">
+            <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </checkbox-group>
+      </view>
+      <view class='line'></view>
+      <view class="middle">
+        <view class="topic">其他症状描述</view>
+        <textarea name="textarea"></textarea>
+      </view>
+      <view class='line'></view>
+      <view class="bottom">
+        <view class="topic">日期</view>
+        <picker name="timeChooser" mode="date" value="{{date}}" start="1990-09-01" end="{{todayDate}}" bindchange="bindDateChange">
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='line'></view>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

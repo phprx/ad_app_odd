@@ -1,0 +1,19 @@
+<!--pages/patientIndex/myDieaseHistory/myDieaseHistory.wxml-->
+<view class="table">
+  <view class="topic">病史</view>
+  <scroll-view scroll-x="true" scroll-y="true" class="scroll">
+    <block wx:for="{{listData}}" wx:key="{[code]}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+        <view class="td">{{item.time}}</view>
+        <view class="td">{{item.text}}</view>
+        <textarea class="textarea" value="{{item.type1}}" disabled="true"></textarea>
+      </view>
+      <view class="tr" wx:else>
+        <view class="td">{{item.time}}</view>
+        <view class="td">{{item.text}}</view>
+        <view class="textarea" value="{{item.type1}}" disabled="true"></view>
+      </view>
+    </block>
+    <label>右滑继续查看</label>
+  </scroll-view>
+</view>

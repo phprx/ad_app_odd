@@ -1,0 +1,27 @@
+/* pages/MOCA/Q1-2/Q1-2.wxss */
+@import "/utils/basic.wxss";
+.question1-2{
+  display: flex;
+  flex-direction: column;
+}
+image{
+  border: 2rpx solid #ddd;
+  box-shadow:  1rpx 1rpx 1rpx 1rpx;
+  width: 500rpx;
+  margin: 0 auto;
+  margin-bottom: 100rpx;
+}
+.operate-area{
+  flex: 1;
+  display: flex;
+  margin-top: 100rpx;
+}
+canvas{
+  border:1px solid black;
+	/*位置绝对*/
+  width: 80%;
+  height: 600rpx;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+}

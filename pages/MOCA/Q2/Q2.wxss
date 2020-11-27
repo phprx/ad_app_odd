@@ -1,0 +1,35 @@
+/* pages/MOCA/Q2/Q2.wxss */
+@import "/utils/basic.wxss";
+.question2-1{
+  display: flex;
+  flex-direction: column;
+}
+.question2-2{
+  display: flex;
+  flex-direction: column;
+}
+.question2-3{
+  display: flex;
+  flex-direction: column;
+}
+
+image{
+  border: 2rpx solid #ddd;
+  box-shadow:  1rpx 1rpx 1rpx 1rpx;
+  width: 500rpx;
+  margin: 0 auto;
+}
+.operate-area{
+  flex: 1;
+  display: flex;
+  margin-top: 100rpx;
+}
+
+input{
+  height: 1.58823529em;
+  padding-left: 10rpx;
+  margin: 0 auto;
+  font-size: 32rpx;
+  border: 1rpx solid #ddd; 
+  border-radius: 10rpx;
+}

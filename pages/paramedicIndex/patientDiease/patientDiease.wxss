@@ -1,0 +1,50 @@
+/* pages/patientIndex/myDiease/myDiease.wxss */
+.line{
+  margin: 20rpx;
+  height: 2rpx;
+  background-color: #D8D8D8;
+}
+.picker{
+  padding: 13px;
+  background-color: #FFFFFF;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #ddd;   
+}
+textarea{
+  margin: 0 auto;
+  width: 90%;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #ddd; 
+  margin-bottom: 30rpx;
+}
+.topic{
+  font-weight: bold;
+  font-size: 45rpx;
+  margin: 10rpx;
+}
+.test{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  height: 70rpx;
+  font-size: 52rpx;
+  margin: 0 auto;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.content checkbox-group{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border: 1rpx solid #ddd;
+}
+.content .checkbox{
+  display: flex;
+  font-size: 32rpx;
+  margin: 10rpx;
+  border: 1rpx solid #ddd;
+}

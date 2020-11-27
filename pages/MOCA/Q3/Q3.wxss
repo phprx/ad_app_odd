@@ -1,0 +1,36 @@
+/* pages/MOCA/Q3/Q3.wxss */
+@import "/utils/basic.wxss";
+.question3-1{
+  display: flex;
+  flex-direction: column;
+}
+.question3-2{
+  display: flex;
+  flex-direction: column;
+}
+.question3-2 .showType{
+  width: 80%;
+}
+.question3-2 .showMulti{
+  width: 80%;
+}
+.checkbox{
+  display: block;
+}
+.checkbox.hide{
+  display: none;
+}
+.question3-2 checkbox{
+  display: flex;
+}
+.question3-2 checkbox-group{
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+.operate-area{
+  flex: 1;
+  display: flex;
+  margin-top: 100rpx;
+}

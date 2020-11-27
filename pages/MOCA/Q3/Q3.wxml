@@ -1,0 +1,43 @@
+<!--pages/MOCA/Q1/Q1.wxml-->
+<view class="question3-1" wx:if="{{ show3_1 }}">
+  <text class="topic">问题3-1</text>
+  <text class="guide" bindtap="help3_1">点此查看指导</text>
+  <audio name="播放" src="{{ playitem }}" controls bindplay="audioStart" id="audio"></audio>
+  <view class="operate-area">
+    <button bindtap="startRecord" loading="{{ isBegin }}">开始录音</button>
+    <button bindtap="stopRecord">停止录音</button>
+  </view>
+  <view class="btn-area">
+    <button bindtap="back3_1">上一题</button>
+    <button bindtap="next3_1">下一题</button>
+  </view>
+</view>
+<view class="question3-2" wx:if="{{ show3_2 }}">
+  <text class="topic">问题3-2</text>
+  <text class="guide" bindtap="help3_2">点此查看指导</text>
+  <button class="showType" bindtap="showType">提示-种类</button>
+  <view class="checkbox {{ showType ? ' ' : 'hide' }}">
+    <checkbox-group bindchange="checkboxChange1">
+      <label wx:for="{{itemType}}">
+        <checkbox value="{{item.value}}" checked="{{item.checked}}">{{item.value}}</checkbox>
+      </label>
+    </checkbox-group>
+  </view>
+  <button class="showMulti" bindtap="showMulti">提示-多选一</button>
+  <view class="checkbox {{ showMulti ? ' ' : 'hide' }}">
+    <checkbox-group bindchange="checkboxChange2">
+      <label wx:for="{{itemMulti}}">
+        <checkbox value="{{item.value}}" checked="{{item.checked}}">{{item.value}}</checkbox>
+      </label>
+    </checkbox-group>
+  </view>
+  <view class="operate-area">
+    <button bindtap="startRecord" loading="{{ isBegin }}">开始录音</button>
+    <button bindtap="stopRecord">停止录音</button>
+  </view>
+  <view class="btn-area">
+    <button bindtap="back3_2">上一题</button>
+
+    <button bindtap="next3_2">下一题</button>
+  </view>
+</view>

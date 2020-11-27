@@ -1,0 +1,21 @@
+.topic{
+  font-size: 48rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+.guide{
+  flex: 1;
+  font-size: 38rpx;
+  color: #0000ff;
+  margin: 20rpx;
+  margin-bottom: 50rpx;
+}
+
+.btn-area{
+  flex: 1;
+  display: flex;
+  margin-top: 100rpx;
+}
+audio{
+  margin: 0 auto;
+}

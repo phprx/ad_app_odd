@@ -1,0 +1,88 @@
+<!--pages/lists/lists.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="top">
+    <view class="topic"> 
+      <text>上传颅脑MRI扫描图像</text>
+    </view>
+    <view class="content">
+      <view class="top_item">
+        <text>横断位</text>
+        <button size="mini" bindtap="choose_axialimage">选择文件</button>
+        <input name="Axial View" bindtap="choose_axialimage" value="{{ axialFilePaths ? axialFilePaths : '未选择任何文件' }}" disabled="true" ></input>
+      </view>
+      <view class="top_item">
+        <text>矢状位</text>
+        <button size="mini" bindtap="choose_sagittalimage">选择文件</button>
+        <input name="Sagittal View" bindtap="choose_sagittalimage" value="{{ sagittalFilePaths ? sagittalFilePaths : '未选择任何文件' }}" disabled="true"></input>
+      </view>
+      <view class="top_item">
+        <text>冠状位</text>
+        <button size="mini" bindtap="choose_coronalimage">选择文件</button>
+        <input name="Coronal View" bindtap="choose_coronalimage" value="{{ coronalFilePaths ? coronalFilePaths : '未选择任何文件' }}" disabled="true"></input>
+      </view>
+    </view>
+  </view>
+
+<view class='line'></view>
+
+  <view class="middle">
+    <view class="topic">
+      <text>生物学标志物</text>
+    </view>
+    <view class="content">
+      <view class="mid_item">
+        <text>Abeta(40)</text>
+        <input name="Abeta(40)" value="6990"></input>
+      </view>
+      <view class="mid_item">
+        <text>Abeta(42)</text>
+        <input name="Abeta(42)" value="987"></input>
+      </view>
+      <view class="mid_item">
+        <text>TAU</text>
+        <input name="TAU" value="239.7"></input>
+      </view>
+      <view class="mid_item">
+        <text>PTAU</text>
+        <input name="PTAU" value="22.83"></input>
+      </view>
+      <view class="mid_item">
+        <text>APOE</text>
+        <input name="APOE" value="1"></input>
+      </view>
+    </view>
+  </view>
+
+<view class='line'></view>
+
+  <view class="bottom">
+    <view class="topic">
+      <text>神经心理学评估</text>
+    </view>
+    <view class="content">
+      <view class="bot_item">
+        <text>MMSE</text>
+        <input name="MMSE" value="20"></input>
+      </view>
+      <view class="bot_item">
+        <text>CDR</text>
+        <input name="CDR" value="3"></input>
+      </view>
+      <view class="bot_item">
+        <text>RAVLT</text>
+        <input name="RAVLT" value="4"></input>
+      </view>
+      <view class="bot_item">
+        <text>FAQ</text>
+        <input name="FAQ" value="10"></input>
+      </view>
+    </view>
+  </view>
+
+<view class='line'></view>
+
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

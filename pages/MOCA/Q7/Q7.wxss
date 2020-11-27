@@ -1,0 +1,25 @@
+/* pages/MOCA/Q7/Q7.wxss */
+@import "/utils/basic.wxss";
+.question7-1{
+  display: flex;
+  flex-direction: column;
+}
+.question7-1.operate-area{
+  display: flex;
+  flex-direction: column;
+}
+.operate-area .item{
+  display: flex;
+  font-size: 32rpx;
+  margin: 20rpx;
+  justify-content: space-around;
+}
+.operate-area .item text{
+  width:20%;
+}
+.operate-area .item input{
+  width: 50%;
+  padding-left: 10rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,137 @@
+/* pages/doctorIndex/mocaDiagnosisShow/mocaDiagnosisShow.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-size: 48rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+.topic{
+  font-size: 48rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+.question1-1{
+  display: flex;
+  flex-direction: column;
+}
+.question1-2{
+  display: flex;
+  flex-direction: column;
+}
+.question1-3{
+  display: flex;
+  flex-direction: column;
+}
+.question2-1{
+  display: flex;
+  flex-direction: column;
+}
+.question2-2{
+  display: flex;
+  flex-direction: column;
+}
+.question2-3{
+  display: flex;
+  flex-direction: column;
+}
+.question3-1{
+  display: flex;
+  flex-direction: column;
+}
+.question3-2{
+  display: flex;
+  flex-direction: column;
+}
+.question3-2 checkbox{
+  display: flex;
+}
+.question3-2 checkbox-group{
+  width: 80%;
+  margin: 0 auto;
+  
+}
+.question3-2 button{
+  margin-top: 30rpx;
+}
+.question4-1{
+  display: flex;
+  flex-direction: column;
+}
+.question4-2{
+  display: flex;
+  flex-direction: column;
+}
+.question4-3{
+  display: flex;
+  flex-direction: column;
+}
+.question4-4{
+  display: flex;
+  flex-direction: column;
+}
+.question5-1{
+  display: flex;
+  flex-direction: column;
+}
+.question5-2{
+  display: flex;
+  flex-direction: column;
+}
+.question5-3{
+  display: flex;
+  flex-direction: column;
+}
+.question6-1{
+  display: flex;
+  flex-direction: column;
+}
+.question7-1{
+  display: flex;
+  flex-direction: column;
+}
+.canvas_bgp{
+	/*位置绝对*/
+	position: absolute;
+  width:80%;
+  height: 600rpx;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  margin-top: 102rpx;
+  z-index: -1;
+}
+.canvas{
+  border:1px solid black;
+	/*位置绝对*/
+  width: 80%;
+  height: 600rpx;
+  left: 0;
+  right: 0;
+  margin:22rpx;
+  margin-left: 68rpx;
+}
+
+.score{
+  display: flex;
+  font-size: 32rpx;
+  margin: 0 auto;
+  margin-bottom: 100rpx;
+  margin-top: 30rpx;
+} 
+.score input{
+  margin-left: 10rpx;
+  width: 50px;
+  border: 1rpx solid #ddd;
+}
+.textAnswer{
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+audio{
+  margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+/* pages/MOCA/Q1-1/Q1-1.wxss */
+@import "/utils/basic.wxss";
+.question1-1{
+  display: flex;
+  flex-direction: column;
+}
+.operate-area{
+  flex: 1;
+  display: flex;
+  margin-top: 100rpx;
+}
+canvas{
+  border:1px solid black;
+	/*位置绝对*/
+  width: 80%;
+  height: 600rpx;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+}
+.canvas_bgp{
+	/*位置绝对*/
+	position: absolute;
+  width:80%;
+  height: 600rpx;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  margin-top: 202rpx;
+  z-index: -1;
+	}
